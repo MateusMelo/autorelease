@@ -3,6 +3,7 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "github:MateusMelo/autorelease",
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.0.3",
