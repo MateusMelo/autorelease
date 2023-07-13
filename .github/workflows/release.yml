@@ -1,8 +1,9 @@
 name: Release
 on:
-  push:
-    branches:
-      - master
+  workflow_run:
+    worflows: ["CI"]
+    types:
+      - completed
 jobs:
   release:
     needs: build
