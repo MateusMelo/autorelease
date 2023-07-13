@@ -1,1 +1,1 @@
-console.log('ready. set. go!', '\n')
+console.log('ready. set. go!')
