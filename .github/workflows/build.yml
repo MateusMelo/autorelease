@@ -39,5 +39,5 @@ jobs:
           echo test, and deploy your project.
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPENDABOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.P_TOKEN }}
         run: npx semantic-release
