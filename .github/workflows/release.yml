@@ -1,7 +1,7 @@
 name: Release
 on:
   workflow_run:
-    worflows: ["CI"]
+    workflows: [CI]
     types:
       - completed
 jobs:
