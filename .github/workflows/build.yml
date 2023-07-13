@@ -24,6 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -35,8 +38,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Release
-        with:
-          persist-credentials: false
         env:
           GITHUB_TOKEN: ${{ secrets.DEPENDABOT_TOKEN }}
         run: npx semantic-release
