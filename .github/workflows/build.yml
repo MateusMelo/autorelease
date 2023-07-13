@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Release
+        with:
+          persist-credentials: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPENDABOT_TOKEN }}
+        run: npx semantic-release
