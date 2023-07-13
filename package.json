@@ -1,0 +1,12 @@
+{
+  "name": "autorelease",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "semantic-release": "^21.0.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
